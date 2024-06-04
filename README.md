@@ -104,7 +104,7 @@ Edit the macros as needed, on per-tool basis
    Args
 
    | Name    | Type | Mandatory/Optional | Default | Description                                                           |
-       |---------|------|--------------------|---------|-----------------------------------------------------------------------|
+   |---------|------|--------------------|---------|-----------------------------------------------------------------------|
    | logFile | str  | Mandatory          |         | Name of the log file                                                  |
    | verbose | bool | Optional           | False   | Flag indicating whether or not to print all the logs to user (STDOUT) |
 2. ***Header ( )***
@@ -130,7 +130,7 @@ Edit the macros as needed, on per-tool basis
    Args
 
    | Name     | Type | Mandatory/Optional | Default | Description                                                              |
-       |----------|------|--------------------|---------|--------------------------------------------------------------------------|
+   |----------|------|--------------------|---------|--------------------------------------------------------------------------|
    | severity | str  | Mandatory          |         | Severity or nature of the current log                                    |
    | module   | str  | Mandatory          |         | Name indicating the location of the current log                          |
    | code     | int  | Mandatory          |         | Integer code with which to fetch the log message                         |
@@ -170,7 +170,7 @@ Edit the macros as needed, on per-tool basis
    Returns
 
    | Name        | Type | Success                                        | Failure |
-       |-------------|------|------------------------------------------------|---------|
+   |-------------|------|------------------------------------------------|---------|
    | currentTime | str  | current time in the DD-MM-YYYY HH:MM:SS format | None    |
 
 ---
