@@ -1,3 +1,5 @@
+TL:DR to go directly to Usage instructions, [click here](#Usage)
+
 # Objectives
 
 To handle all the logging requirements of a tool, including its header, footer, messages & gracious exit
@@ -174,3 +176,44 @@ Edit the macros as needed, on per-tool basis
    | currentTime | str  | current time in the DD-MM-YYYY HH:MM:SS format | None    |
 
 ---
+
+## *returnCodes.py*
+
+### Macros
+
+1. Unknown error
+2. Return Messages dictionary
+
+   Mapping convention is that positive integers will be used for success & informational messages,
+
+   and that negative numbers will be used for failure & warning messages
+
+
+### Functions
+
+1. ***def GetReturnMessages ( )***
+
+   Returns the message mapped to the given return code
+
+   Args → rCode, integer denoting the return code
+
+   Returns → string holding the message mapped to rCode, unknown error if rCode is not find
+
+
+---
+
+# Usage
+
+Edit the following before using the tool.
+
+1. tool.py → TOOL, VER, TAG
+2. utilities/returnCodes.py → RETURN_MSGS
+3. (optional) utilities/utilities.py → Color Codes, COLOR_MAP
+
+To instantiate a new logger object,  `test = Logger (logFile = "test.py", verbose = True)`
+
+To add header line, `test.Header (identifier = "Test-1")`
+
+To add footer line, `test.Footer ()`
+
+To add a log message, `test.Log (severity = PASS, module = "test module", rCode = 1, user = True, optional = "Testing log message.")`
