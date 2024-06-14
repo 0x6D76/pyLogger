@@ -27,7 +27,7 @@ class Logger :
         self.verbose = verbose
         self.message = ""
 
-    def Header (self, identifier) :
+    def Header (self, identifier = "") :
         """
         Formats header line based on tool.py and logs it.
         :param identifier: string holding the identifier
