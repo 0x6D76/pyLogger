@@ -14,7 +14,6 @@
  * Copyright (c) 2024 0x6D76 (0x6D76@proton.me)
 """
 import os
-import pytest
 from logger import Logger
 from utilities.utilities import (GetCurrentTime, COLOR_MAP, PASS, FAIL,
                                  INFO, WARN, GRN, RED, BLU, YEL)
