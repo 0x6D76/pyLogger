@@ -219,3 +219,15 @@ To add header line, `test.Header (identifier = "Test-1")`
 To add footer line, `test.Footer ()`
 
 To add a log message, `test.Log (severity = PASS, module = "test module", rCode = 1, user = True, optional = "Testing log message.")`
+
+---
+
+# Tool Output
+
+![Terminal Output](img/pyLTer.png)
+
+### Log File
+
+![Log File Output](img/pyLFile.png)
+
+---

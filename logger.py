@@ -1,14 +1,17 @@
 """
  * File: logger.py
- * Description: 
+ * Description: The main file that contains logger class, associated functions and members
  * Functions:
+ *           Logger
+ *              def Header ()
+ *              def Footer ()
+ *              def Log ()
  *           
  * Author: 0x6D76
  * Copyright (c) 2024 0x6D76 (0x6D76@proton.me)
 """
 from tool import TOOL, VER, TAG
-from utilities.utilities import (PASS, FAIL, INFO, WARN,
-                                 MAG, RST, COLOR_MAP, EXIT, GetCurrentTime)
+from utilities.utilities import (MAG, RST, COLOR_MAP, EXIT, GetCurrentTime, PASS, FAIL)
 from utilities.returnCodes import GetReturnMessages
 
 LINE = "=" * 80
@@ -17,7 +20,7 @@ HALF_LINE = "=" * 40
 
 class Logger :
 
-    def __init__ (self, logFile, verbose = "False") :
+    def __init__ (self, logFile, verbose = False) :
         """
         Instantiate a new object of Logger class.
         :param logFile: string holding the first of the log file
@@ -84,5 +87,3 @@ class Logger :
 
         userLog = f"{color}{severity}{RST} [{GetCurrentTime ()}] [{module}] {message} {optional}"
         print (userLog)
-
-

@@ -1,7 +1,8 @@
 """
  * File: returnCodes.py
- * Description: 
+ * Description: This file contains macros, return message dictionary and functions associated with log messages
  * Functions:
+ *           def GetReturnMessages ()
  *           
  * Author: 0x6D76
  * Copyright (c) 2024 0x6D76 (0x6D76@proton.me)

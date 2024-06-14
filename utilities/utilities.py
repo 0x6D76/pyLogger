@@ -1,8 +1,8 @@
 """
  * File: utilities.py
- * Description: 
+ * Description: This file contains macros and functions that are commonly used or otherwise unclassifiable.
  * Functions:
- *           
+ *           def CurrentTime ()
  * Author: 0x6D76
  * Copyright (c) 2024 0x6D76 (0x6D76@proton.me)
 """
