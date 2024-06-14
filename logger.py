@@ -84,3 +84,5 @@ class Logger :
 
         userLog = f"{color}{severity}{RST} [{GetCurrentTime ()}] [{module}] {message} {optional}"
         print (userLog)
+
+

@@ -1,5 +1,7 @@
 ### TL:DR to go directly to Usage instructions, [click here](#Usage)
 
+---
+
 # Objectives
 
 To handle all the logging requirements of a tool, including its header, footer, messages & gracious exit
