@@ -10,9 +10,9 @@
  * Author: 0x6D76
  * Copyright (c) 2024 0x6D76 (0x6D76@proton.me)
 """
-from tool import TOOL, VER, TAG
-from utilities.utilities import (MAG, RST, COLOR_MAP, EXIT, GetCurrentTime, PASS, FAIL)
-from utilities.returnCodes import GetReturnMessages
+from pyLogger.tool import TOOL, VER, TAG
+from pyLogger.utilities import (MAG, RST, COLOR_MAP, EXIT, GetCurrentTime)
+from pyLogger.returnCodes import GetReturnMessages
 
 LINE = "=" * 80
 HALF_LINE = "=" * 40
