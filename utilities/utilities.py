@@ -7,6 +7,7 @@
  * Copyright (c) 2024 0x6D76 (0x6D76@proton.me)
 """
 import datetime
+import os
 
 PASS = "[PASS]"
 FAIL = "[FAIL]"
@@ -41,3 +42,14 @@ def GetCurrentTime () :
     """
     currentTime = datetime.datetime.now ()
     return f"{currentTime.strftime ('%d-%m-%y %H:%M:%S')}"
+
+
+def InitializeDir (directories):
+    """
+    Initializes directories to store the logs
+    :param directories: vector of strings holding the directory names
+    :return: None
+    """
+    for directory in directories:
+        if not os.path.exists (directory):
+            os.mkdir (directory)
